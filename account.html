@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,13 +17,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Inter&display=swap&_v=20230828113100"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Inter&display=swap&_v=20230828125402"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="./assets/css/libs.css?_v=20230828113100">
-  <link rel="stylesheet" href="./assets/css/style.css?_v=20230828113100">
+  <link rel="stylesheet" href="./assets/css/libs.css?_v=20230828125402">
+  <link rel="stylesheet" href="./assets/css/style.css?_v=20230828125402">
 
-  <script src="./assets/js/bundle.min.js?_v=20230828113100" defer></script>
+  <script src="./assets/js/bundle.min.js?_v=20230828125402" defer></script>
 </head>
 
 <body class="page">
@@ -77,9 +77,11 @@
       </div>
 
       <a href="./" aria-label="Go back to main page">
-        <div class="logo">
-          <img class="img img_vertical" src="./assets/images/logo.svg"
-            srcset="./assets/images/logo-small.svg 1280w, ./assets/images/logo.svg" alt="">
+        <div class="logo d-block d-lg-none">
+          <img class="img img_vertical" src="./assets/images/logo.svg" alt="Logo desktop">
+        </div>
+        <div class="logo d-lg-block d-none">
+          <img class="img img_vertical" src="./assets/images/logo-small.svg" alt="Logo mobile">
         </div>
       </a>
       <div class="navigation__menu menu" id="menu" data-mobile-container="menu">
@@ -114,13 +116,13 @@
             Sunglasses
             <div class="submenu__child submenu menu-child">
   <div class="container">
-    <ul class="submenu__list">
-      <li data-menu-back-desktop>
+    <div class="submenu__list">
+      <div data-menu-back-desktop>
         <button class="button">
           <span class="button__icon icon icon-menu-back"></span>
           Назад
         </button>
-      </li>
+      </div>
 
       <div class="menu-group">
         <div class="menu-group__title">New</div>
@@ -317,7 +319,7 @@
           </li>
         </ul>
       </div>
-    </ul>
+    </div>
   </div>
 </div>
           </li>
@@ -482,7 +484,7 @@
 </div>
           </li>
           <li class="submenu__item menu-item">
-            <a href="#kurva">
+            <a href="#">
               <picture>
                 <source srcset="./assets/images/glasses-menu/image-3.avif" type="image/avif">
                 <source srcset="./assets/images/glasses-menu/image-3.webp" type="image/webp">
@@ -575,7 +577,7 @@
 
           <div class="search" data-search-container>
   <div class="search__body">
-    <form action="" class="search__form" id="search-form">
+    <form action="./" class="search__form" id="search-form">
       <button class="search__button icon-button" type="submit" aria-label="Search submit button">
         <span class="icon icon-search"></span>
       </button>
@@ -813,13 +815,13 @@
         <div class="newsletter__message">Enter your e-mail and don’t miss any<br> news or promotion from NAKED Optics
         </div>
       </div>
-      <form class="newsletter__form newsletter-form flex-grow-1" id="form-newsletter">
+      <form action="./" class="newsletter__form newsletter-form flex-grow-1" id="form-newsletter">
         <div class="newsletter-form__row flex items-center">
           <div class="field">
             <input type="text" class="field__input" name="email" placeholder="Add your email">
           </div>
 
-          <button href="#" type="sumbit" class="button button_variant_1 button_auto">
+          <button type="submit" class="button button_variant_1 button_auto">
             Send
             <span class="button__icon button__icon_right icon icon-angle-right"></span>
           </button>
@@ -951,7 +953,7 @@
         shipping costs</span>
 
       <div class="footer__lang">
-        <select name="" data-select>
+        <select name="language" data-select>
           <option value="ru" data-icon="lang-ru">RUS</option>
           <option value="en" data-icon="lang-en">ENG</option>
         </select>
@@ -967,7 +969,7 @@
       <span class="icon icon_small icon-close"></span>
     </div>
   </header>
-  <article class="modal-content__body">
+  <div class="modal-content__body">
     <div class="cart-message">
       <span class="cart-message__text">Free shipping from 150€</span>
     </div>
@@ -1073,7 +1075,7 @@
     </div>
 
 
-  </article>
+  </div>
   <footer class="modal-content__footer">
     <div class="flex justify-between items-center">
       <span class="text-big text-color-primary">Total</span>

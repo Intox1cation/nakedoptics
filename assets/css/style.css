@@ -421,7 +421,9 @@ svg {
   fill: currentColor;
 }
 
-hr {
+hr,
+.hr {
+  display: block;
   border-bottom: 1px solid rgb(var(--divider-color));
   opacity: 0.2;
 }
@@ -1193,7 +1195,8 @@ blockquote:before {
   transition: opacity 275ms ease;
 }
 
-.combo-item hr {
+.combo-item hr,
+.combo-item .hr {
   margin: 8px 0px;
 }
 
