@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 2.0</title>
+  <meta name="description" content="Nakedoptics description">
+  <link rel="preload" as="style" href="./assets/css/libs.css">
+  <link rel="preload" as="style" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Inter&display=swap&_v=20230828090644"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/libs.css?_v=20230828090644">
+  <link rel="stylesheet" href="./assets/css/style.css?_v=20230828090644">
+
+  <script src="./assets/js/bundle.min.js?_v=20230828090644" defer></script>
+</head>
+
+<body class="page">
+  <div class="wrapper flex flex-column">
+    <wc-toast position="top-right"></wc-toast>
+    <div class="announcement">
+  <div class="container">
+    <div class="announcement__inner flex justify-center items-center">
+
+      <div class="announcement__slider swiper">
+        <div class="announcement__slider-wrapper swiper-wrapper">
+          <div class="announcement__slide swiper-slide">
+            <button class="announcement__arrow announcement__arrow_prev" aria-label="Previous announcement">
+              <span class="icon icon icon-slider-prev"></span>
+            </button>
+            <a href="#">Free shipping over 100€ order</a>
+            <button class="announcement__arrow announcement__arrow_next" aria-label="Next announcement">
+              <span class="icon icon icon-slider-next"></span>
+            </button>
+          </div>
+          <div class="announcement__slide swiper-slide">
+            <button class="announcement__arrow announcement__arrow_prev" aria-label="Previous announcement">
+              <span class="icon icon icon-slider-prev"></span>
+            </button>
+            <span>Free shipping over 100€ orderasdasdasd</span>
+            <button class="announcement__arrow announcement__arrow_next" aria-label="Next announcement">
+              <span class="icon icon icon-slider-next"></span>
+            </button>
+          </div>
+          <div class="announcement__slide swiper-slide">
+            <button class="announcement__arrow announcement__arrow_prev" aria-label="Previous announcement">
+              <span class="icon icon icon-slider-prev"></span>
+            </button>
+            <span>Free shipping over 100€ order2222222222222222</span>
+            <button class="announcement__arrow announcement__arrow_next" aria-label="Next announcement">
+              <span class="icon icon icon-slider-next"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <header class="header header_sticky">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__mobile-button">
+        <button class="icon-button" data-mobile-open="menu" aria-label="Menu open button">
+          <span class="icon icon-menu-bar"></span>
+        </button>
+      </div>
+
+      <a href="/" aria-label="Go back to main page">
+        <div class="logo">
+          <img class="img img_vertical" src="./assets/images/logo.svg"
+            srcset="./assets/images/logo-small.svg 1280w, ./assets/images/logo.svg" alt="">
+        </div>
+      </a>
+      <div class="navigation__menu menu" id="menu" data-mobile-container="menu">
+  <div class="menu__header">
+    <button class="button button_text" data-menu-back aria-label="Menu back button">
+      <span class="button__icon icon icon-menu-back"></span>
+      Back
+    </button>
+    <button class="button button_text button_icon" data-mobile-close="menu" aria-label="Menu close button">
+      <span class="icon icon-close"></span>
+    </button>
+  </div>
+  <nav class="menu__inner">
+    <div class="menu__list">
+      <div class="menu-group">
+        <div class="menu-group__title d-none d-md-block">Menu</div>
+        <ul class="menu-group__items">
+          <li class="menu__item menu-item  menu-item_active ">
+            <a href="./category.html">Optics</a>
+            <div class="menu__child submenu menu-child">
+  <div class="container">
+    <div class="submenu__list">
+      <div class="menu-group">
+        <div class="menu-group__title">Glasses</div>
+        <ul class="menu-group__items">
+          <li class="submenu__item menu-item">
+            <picture>
+              <source srcset="./assets/images/glasses-menu/image-1.avif" type="image/avif">
+              <source srcset="./assets/images/glasses-menu/image-1.webp" type="image/webp">
+              <img src="./assets/images/glasses-menu/image-1.png" alt="Sunglasses">
+            </picture>
+            Sunglasses
+            <div class="submenu__child submenu menu-child">
+  <div class="container">
+    <ul class="submenu__list">
+      <li data-menu-back-desktop>
+        <button class="button">
+          <span class="button__icon icon icon-menu-back"></span>
+          Назад
+        </button>
+      </li>
+
+      <div class="menu-group">
+        <div class="menu-group__title">New</div>
+        <ul class="menu-group__items">
+          <li class="submenu__item menu-item">
+            <picture>
+              <source srcset="./assets/images/glasses-menu/image-1.avif" type="image/avif">
+              <source srcset="./assets/images/glasses-menu/image-1.webp" type="image/webp">
+              <img src="./assets/images/glasses-menu/image-1.png" alt="Sunglasses">
+            </picture>
+            First glasses
+          </li>
+          <li class="submenu__item menu-item menu-item_active">
+            <picture>
+              <source srcset="./assets/images/glasses-menu/image-2.avif" type="image/avif">
+              <source srcset="./assets/images/glasses-menu/image-2.webp" type="image/webp">
+              <img src="./assets/images/glasses-menu/image-2.png" alt="Sport glasses">
+            </picture>
+            Second glasses
+            <div class="submenu__content menu-content">
+  <div class="menu-content__inner">
+    <div class="menu-content__header flex items-center">
+      <div class="menu-content__title text-level-5 text-weight-700 text-upper">Sport glasses</div>
+      <a href="#" class="menu-content__more button button_small text-color-secondary text-weight-400">
+        See all products
+        <span class="button__icon button__icon_right icon icon-angle-right"></span>
+      </a>
+    </div>
+    <div class="menu-content__items">
+      <div class="submenu-content-card  submenu-content-card_first ">
+  <div class="submenu-content-card__inner">
+    
+    <div class="submenu-content-card__image">
+      <picture>
+        <source srcset="./assets/images/glasses-menu/sports/image-1.avif" type="image/avif">
+        <source srcset="./assets/images/glasses-menu/sports/image-1.webp" type="image/webp">
+        <img loading="lazy" src="./assets/images/glasses-menu/sports/image-1.jpg" alt="Rush half frame">
+      </picture>
+    </div>
+    
+    <div class="submenu-content-card__description">
+      <div class="submenu-content-card__title  text-level-4 text-weight-400 ">Rush half frame
+      </div>
+       <div class="submenu-content-card__caption text-upper">3 colors</div> 
+       <div class="submenu-content-card__text text-color-secondary">Adjustable nose mount, protection: UV400, unique size</div> 
+    </div>
+  </div>
+</div>
+
+      <div class="submenu-content-card ">
+  <div class="submenu-content-card__inner">
+    
+    <div class="submenu-content-card__image">
+      <picture>
+        <source srcset="./assets/images/glasses-menu/sports/image-2.avif" type="image/avif">
+        <source srcset="./assets/images/glasses-menu/sports/image-2.webp" type="image/webp">
+        <img loading="lazy" src="./assets/images/glasses-menu/sports/image-2.jpg" alt="Rush full frame">
+      </picture>
+    </div>
+    
+    <div class="submenu-content-card__description">
+      <div class="submenu-content-card__title ">Rush full frame
+      </div>
+       <div class="submenu-content-card__caption text-upper">2 colors</div> 
+      
+    </div>
+  </div>
+</div>
+
+      <div class="submenu-content-card ">
+  <div class="submenu-content-card__inner">
+    
+    <div class="submenu-content-card__image">
+      <picture>
+        <source srcset="./assets/images/glasses-menu/sports/image-3.avif" type="image/avif">
+        <source srcset="./assets/images/glasses-menu/sports/image-3.webp" type="image/webp">
+        <img loading="lazy" src="./assets/images/glasses-menu/sports/image-3.jpg" alt="Charge full frame">
+      </picture>
+    </div>
+    
+    <div class="submenu-content-card__description">
+      <div class="submenu-content-card__title ">Charge full frame
+      </div>
+       <div class="submenu-content-card__caption text-upper">2 colors</div> 
+      
+    </div>
+  </div>
+</div>
+
+      <div class="submenu-content-card ">
+  <div class="submenu-content-card__inner">
+    
+    <div class="submenu-content-card__image">
+      <picture>
+        <source srcset="./assets/images/glasses-menu/sports/image-4.avif" type="image/avif">
+        <source srcset="./assets/images/glasses-menu/sports/image-4.webp" type="image/webp">
+        <img loading="lazy" src="./assets/images/glasses-menu/sports/image-4.jpg" alt="Rush full frame">
+      </picture>
+    </div>
+    
+    <div class="submenu-content-card__description">
+      <div class="submenu-content-card__title ">Rush full frame
+      </div>
+       <div class="submenu-content-card__caption text-upper">2 colors</div> 
+      
+    </div>
+  </div>
+</div>
+
+      <div class="submenu-content-card ">
+  <div class="submenu-content-card__inner">
+    
+    <div class="submenu-content-card__image">
+      <picture>
+        <source srcset="./assets/images/glasses-menu/sports/image-5.avif" type="image/avif">
+        <source srcset="./assets/images/glasses-menu/sports/image-5.webp" type="image/webp">
+        <img loading="lazy" src="./assets/images/glasses-menu/sports/image-5.jpg" alt="Rush half frame Photochromatic">
+      </picture>
+    </div>
+    
+    <div class="submenu-content-card__description">
+      <div class="submenu-content-card__title ">Rush half frame Photochromatic
+      </div>
+       <div class="submenu-content-card__caption text-upper">2 colors</div> 
+      
+    </div>
+  </div>
+</div>
+
+      <div class="submenu-content-card ">
+  <div class="submenu-content-card__inner">
+    
+    <div class="submenu-content-card__image">
+      <picture>
+        <source srcset="./assets/images/glasses-menu/sports/image-6.avif" type="image/avif">
+        <source srcset="./assets/images/glasses-menu/sports/image-6.webp" type="image/webp">
+        <img loading="lazy" src="./assets/images/glasses-menu/sports/image-6.jpg" alt="THE HAWK">
+      </picture>
+    </div>
+    
+    <div class="submenu-content-card__description">
+      <div class="submenu-content-card__title ">THE HAWK
+      </div>
+       <div class="submenu-content-card__caption text-upper">4 FRAME colors</div> 
+      
+    </div>
+  </div>
+</div>
+
+      <div class="submenu-content-card ">
+  <div class="submenu-content-card__inner">
+    
+    <div class="submenu-content-card__image">
+      <picture>
+        <source srcset="./assets/images/glasses-menu/sports/image-7.avif" type="image/avif">
+        <source srcset="./assets/images/glasses-menu/sports/image-7.webp" type="image/webp">
+        <img loading="lazy" src="./assets/images/glasses-menu/sports/image-7.jpg" alt="THE FALCON">
+      </picture>
+    </div>
+    
+    <div class="submenu-content-card__description">
+      <div class="submenu-content-card__title ">THE FALCON
+      </div>
+       <div class="submenu-content-card__caption text-upper">3 FRAME COLORS</div> 
+      
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-group__title">Old</div>
+        <ul class="menu-group__items">
+          <li class="submenu__item menu-item">
+            <picture>
+              <source srcset="./assets/images/glasses-menu/image-4.avif" type="image/avif">
+              <source srcset="./assets/images/glasses-menu/image-4.webp" type="image/webp">
+              <img src="./assets/images/glasses-menu/image-4.png" alt="Ski goggles">
+            </picture>
+            Third glasses
+          </li>
+          <li class="submenu__item menu-item">
+            <picture>
+              <source srcset="./assets/images/glasses-menu/image-8.avif" type="image/avif">
+              <source srcset="./assets/images/glasses-menu/image-8.webp" type="image/webp">
+              <img src="./assets/images/glasses-menu/image-8.png" alt="Downhill goggles">
+            </picture>
+            Downhill goggles
+          </li>
+        </ul>
+      </div>
+    </ul>
+  </div>
+</div>
+          </li>
+          <li class="submenu__item menu-item menu-item_active">
+            <picture>
+              <source srcset="./assets/images/glasses-menu/image-2.avif" type="image/avif">
+              <source srcset="./assets/images/glasses-menu/image-2.webp" type="image/webp">
+              <img src="./assets/images/glasses-menu/image-2.png" alt="Sport glasses">
+            </picture>
+            Sport glasses
+            <div class="submenu__content menu-content">
+  <div class="menu-content__inner">
+    <div class="menu-content__header flex items-center">
+      <div class="menu-content__title text-level-5 text-weight-700 text-upper">Sport glasses</div>
+      <a href="#" class="menu-content__more button button_small text-color-secondary text-weight-400">
+        See all products
+        <span class="button__icon button__icon_right icon icon-angle-right"></span>
+      </a>
+    </div>
+    <div class="menu-content__items">
+      <div class="submenu-content-card  submenu-content-card_first ">
+  <div class="submenu-content-card__inner">
+    
+    <div class="submenu-content-card__image">
+      <picture>
+        <source srcset="./assets/images/glasses-menu/sports/image-1.avif" type="image/avif">
+        <source srcset="./assets/images/glasses-menu/sports/image-1.webp" type="image/webp">
+        <img loading="lazy" src="./assets/images/glasses-menu/sports/image-1.jpg" alt="Rush half frame">
+      </picture>
+    </div>
+    
+    <div class="submenu-content-card__description">
+      <div class="submenu-content-card__title  text-level-4 text-weight-400 ">Rush half frame
+      </div>
+       <div class="submenu-content-card__caption text-upper">3 colors</div> 
+       <div class="submenu-content-card__text text-color-secondary">Adjustable nose mount, protection: UV400, unique size</div> 
+    </div>
+  </div>
+</div>
+
+      <div class="submenu-content-card ">
+  <div class="submenu-content-card__inner">
+    
+    <div class="submenu-content-card__image">
+      <picture>
+        <source srcset="./assets/images/glasses-menu/sports/image-2.avif" type="image/avif">
+        <source srcset="./assets/images/glasses-menu/sports/image-2.webp" type="image/webp">
+        <img loading="lazy" src="./assets/images/glasses-menu/sports/image-2.jpg" alt="Rush full frame">
+      </picture>
+    </div>
+    
+    <div class="submenu-content-card__description">
+      <div class="submenu-content-card__title ">Rush full frame
+      </div>
+       <div class="submenu-content-card__caption text-upper">2 colors</div> 
+      
+    </div>
+  </div>
+</div>
+
+      <div class="submenu-content-card ">
+  <div class="submenu-content-card__inner">
+    
+    <div class="submenu-content-card__image">
+      <picture>
+        <source srcset="./assets/images/glasses-menu/sports/image-3.avif" type="image/avif">
+        <source srcset="./assets/images/glasses-menu/sports/image-3.webp" type="image/webp">
+        <img loading="lazy" src="./assets/images/glasses-menu/sports/image-3.jpg" alt="Charge full frame">
+      </picture>
+    </div>
+    
+    <div class="submenu-content-card__description">
+      <div class="submenu-content-card__title ">Charge full frame
+      </div>
+       <div class="submenu-content-card__caption text-upper">2 colors</div> 
+      
+    </div>
+  </div>
+</div>
+
+      <div class="submenu-content-card ">
+  <div class="submenu-content-card__inner">
+    
+    <div class="submenu-content-card__image">
+      <picture>
+        <source srcset="./assets/images/glasses-menu/sports/image-4.avif" type="image/avif">
+        <source srcset="./assets/images/glasses-menu/sports/image-4.webp" type="image/webp">
+        <img loading="lazy" src="./assets/images/glasses-menu/sports/image-4.jpg" alt="Rush full frame">
+      </picture>
+    </div>
+    
+    <div class="submenu-content-card__description">
+      <div class="submenu-content-card__title ">Rush full frame
+      </div>
+       <div class="submenu-content-card__caption text-upper">2 colors</div> 
+      
+    </div>
+  </div>
+</div>
+
+      <div class="submenu-content-card ">
+  <div class="submenu-content-card__inner">
+    
+    <div class="submenu-content-card__image">
+      <picture>
+        <source srcset="./assets/images/glasses-menu/sports/image-5.avif" type="image/avif">
+        <source srcset="./assets/images/glasses-menu/sports/image-5.webp" type="image/webp">
+        <img loading="lazy" src="./assets/images/glasses-menu/sports/image-5.jpg" alt="Rush half frame Photochromatic">
+      </picture>
+    </div>
+    
+    <div class="submenu-content-card__description">
+      <div class="submenu-content-card__title ">Rush half frame Photochromatic
+      </div>
+       <div class="submenu-content-card__caption text-upper">2 colors</div> 
+      
+    </div>
+  </div>
+</div>
+
+      <div class="submenu-content-card ">
+  <div class="submenu-content-card__inner">
+    
+    <div class="submenu-content-card__image">
+      <picture>
+        <source srcset="./assets/images/glasses-menu/sports/image-6.avif" type="image/avif">
+        <source srcset="./assets/images/glasses-menu/sports/image-6.webp" type="image/webp">
+        <img loading="lazy" src="./assets/images/glasses-menu/sports/image-6.jpg" alt="THE HAWK">
+      </picture>
+    </div>
+    
+    <div class="submenu-content-card__description">
+      <div class="submenu-content-card__title ">THE HAWK
+      </div>
+       <div class="submenu-content-card__caption text-upper">4 FRAME colors</div> 
+      
+    </div>
+  </div>
+</div>
+
+      <div class="submenu-content-card ">
+  <div class="submenu-content-card__inner">
+    
+    <div class="submenu-content-card__image">
+      <picture>
+        <source srcset="./assets/images/glasses-menu/sports/image-7.avif" type="image/avif">
+        <source srcset="./assets/images/glasses-menu/sports/image-7.webp" type="image/webp">
+        <img loading="lazy" src="./assets/images/glasses-menu/sports/image-7.jpg" alt="THE FALCON">
+      </picture>
+    </div>
+    
+    <div class="submenu-content-card__description">
+      <div class="submenu-content-card__title ">THE FALCON
+      </div>
+       <div class="submenu-content-card__caption text-upper">3 FRAME COLORS</div> 
+      
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+          </li>
+          <li class="submenu__item menu-item">
+            <a href="#kurva">
+              <picture>
+                <source srcset="./assets/images/glasses-menu/image-3.avif" type="image/avif">
+                <source srcset="./assets/images/glasses-menu/image-3.webp" type="image/webp">
+                <img src="./assets/images/glasses-menu/image-3.png" alt="Bycicle glasses">
+              </picture>
+              Bycicle glasses
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-group__title">Goggles</div>
+        <ul class="menu-group__items">
+          <li class="submenu__item menu-item">
+            <picture>
+              <source srcset="./assets/images/glasses-menu/image-4.avif" type="image/avif">
+              <source srcset="./assets/images/glasses-menu/image-4.webp" type="image/webp">
+              <img src="./assets/images/glasses-menu/image-4.png" alt="Ski goggles">
+            </picture>
+            Ski goggles
+          </li>
+          <li class="submenu__item menu-item">
+            <picture>
+              <source srcset="./assets/images/glasses-menu/image-8.avif" type="image/avif">
+              <source srcset="./assets/images/glasses-menu/image-8.webp" type="image/webp">
+              <img src="./assets/images/glasses-menu/image-8.png" alt="Downhill goggles">
+            </picture>
+            Downhill goggles
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-group">
+        <div class="menu-group__title">Others</div>
+        <ul class="menu-group__items">
+          <li class="submenu__item menu-item">
+            <picture>
+              <source srcset="./assets/images/glasses-menu/image-6.avif" type="image/avif">
+              <source srcset="./assets/images/glasses-menu/image-6.webp" type="image/webp">
+              <img src="./assets/images/glasses-menu/image-6.png" alt="Lenses">
+            </picture>
+            Lenses
+          </li>
+          <li class="submenu__item menu-item">
+            <picture>
+              <source srcset="./assets/images/glasses-menu/image-7.avif" type="image/avif">
+              <source srcset="./assets/images/glasses-menu/image-7.webp" type="image/webp">
+              <img src="./assets/images/glasses-menu/image-7.png" alt="Accesories">
+            </picture>
+            Accesories
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+          </li>
+          <li class="menu__item menu-item">
+            <a href="./category.html">Clothing</a>
+          </li>
+          <li class="menu__item menu-item ">
+            <a href="./category.html">Outlet</a>
+          </li>
+          <li class="menu__item menu-item ">
+            <a href="./heroes.html">Naked heroes</a>
+          </li>
+          <li class="menu__item menu-item ">
+            <a href="./stories.html">Stories</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-group d-none d-md-block">
+        <div class="menu-group__title">Account</div>
+        <ul class="menu-group__items">
+          <li class="menu__item menu-item">
+            <a href="#">Log in</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+      <div class="header__actions flex justify-end items-center">
+        <div class="action-item">
+          <button class="icon-button" data-search-open aria-label="Search open button">
+            <span class="icon icon-search"></span>
+          </button>
+
+          <div class="search" data-search-container>
+  <div class="search__body">
+    <form action="" class="search__form" id="search-form">
+      <button class="search__button icon-button" type="submit" aria-label="Search submit button">
+        <span class="icon icon-search"></span>
+      </button>
+
+      <div class="search__field">
+        <input type="text" name="q" placeholder="Search for products or categories">
+      </div>
+    </form>
+
+    <div class="search__close">
+      <button class="icon-button" data-search-close aria-label="Search close button">
+        <span class="icon icon-close"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="search__result search-result">
+    <div class="search-result__title">Suggested:</div>
+    <div class="search-result__inner">
+      <div class="search-result__item">
+        <div class="text-level-5">Search result number 1</div>
+      </div>
+
+      <div class="search-result__item">
+        <div class="text-level-5">Search result number 2</div>
+      </div>
+
+      <div class="search-result__item">
+        <div class="text-level-5">Search result number 3</div>
+      </div>
+
+      <div class="search-result__item">
+        <div class="text-level-5">Search result number 4</div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+
+        <div class="action-item d-block d-md-none">
+          <button class="icon-button" aria-label="Account button">
+            <span class="icon icon-user-circle"></span>
+          </button>
+        </div>
+
+        <div class="action-item">
+          <button class="icon-button icon-badge" data-cart-button aria-label="Basket button">
+            <span class="icon icon-cart"></span>
+            <span class="icon-badge__inner">4</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__progress"></div>
+</header>
+    <main class="main grow-1">
+      <div class="container">
+        <div class="page-header page-header_center page-header_container margin-y-7">
+          <h1 class="page-title text-upper margin-bottom-2">Sports glasses</h1>
+          <div class="page-text">
+            <p>Whether you are running, triathlon, hiking or cycling - a comfortable fit is a must, even during long and
+              intensive training sessions. That's why you should make sure that your sports glasses have an adjustable
+              nose piece and rubberised temples.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-category category margin-bottom-5">
+  <div class="container">
+    <div class="category__nav flex justify-between items-center margin-bottom-3">
+      <div class="category-title">All models (7)</div>
+      <div class="category__nav-actions flex items-center">
+        <div class="category__nav-sort flex items-center">
+          <span class="margin-right-1">Sort by</span>
+          <select name="sort" id="" data-select>
+            <option value="mv" data-icon="arrow-up">Most Viewed</option>
+            <option value="mv" data-icon="arrow-down">Most Viewed</option>
+          </select>
+        </div>
+        <div class="category__nav-filter">
+          <button class="button button_variant_2 button_small button_auto" data-filter-button>
+            Filter
+            <span class="button__icon button__icon_right">
+              <span class="icon icon-filter"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="category__products margin-bottom-8">
+      <div class="product-card">
+  
+  <a href="./product.html">
+    <div class="product-card__image-wrapper">
+      <div class="product-card__image">
+        <picture>
+          <source srcset="./assets/images/product/covers/image-1.avif" type="image/avif">
+          <source srcset="./assets/images/product/covers/image-1.webp" type="image/webp">
+          <img loading="lazy" src="./assets/images/product/covers/image-1.png" alt="Medium Size, Exchangeable Lens, Polarized">
+        </picture>
+      </div>
+    </div>
+  </a>
+  
+
+  
+  <div class="product-card__badge product-card__badge_new text-upper">New product</div>
+  
+  
+  
+
+  <div class="product-card__details">
+    
+    <a href="./product.html" class="product-card__name text-level-4 text-weight-700 link-border">The HAWK</a>
+    
+    
+    <a href="./category.html" class="product-card__category text-weight-500 link-border">Medium Size, Exchangeable Lens, Polarized</a>
+    
+    
+    <div class="product-card__features text-color-secondary">3 FRAME COLOR + 8 LENS COLOR</div>
+    
+
+    <div class="product-card__footer">
+      
+      <div class="product-card__review rating">
+        <div class="stars margin-right-1">
+  <div class="stars__back"></div>
+  <div class="stars__front" style="width: 42%"></div>
+</div>
+        <span>168 Review</span>
+      </div>
+      
+      
+      <div class="product-card__price">74,99 €</div>
+      
+    </div>
+  </div>
+</div>
+
+      <div class="product-card">
+  
+  <a href="./product.html">
+    <div class="product-card__image-wrapper">
+      <div class="product-card__image">
+        <picture>
+          <source srcset="./assets/images/product/covers/image-2.avif" type="image/avif">
+          <source srcset="./assets/images/product/covers/image-2.webp" type="image/webp">
+          <img loading="lazy" src="./assets/images/product/covers/image-2.png" alt="Antifog, Magnetic lens">
+        </picture>
+      </div>
+    </div>
+  </a>
+  
+
+  
+  
+  
+
+  <div class="product-card__details">
+    
+    <a href="./product.html" class="product-card__name text-level-4 text-weight-700 link-border">The FALCON</a>
+    
+    
+    <a href="./category.html" class="product-card__category text-weight-500 link-border">Antifog, Magnetic lens</a>
+    
+    
+    <div class="product-card__features text-color-secondary">4 FRAME COLOR + 8 LENS COLOR</div>
+    
+
+    <div class="product-card__footer">
+      
+      <div class="product-card__review rating">
+        <div class="stars margin-right-1">
+  <div class="stars__back"></div>
+  <div class="stars__front" style="width: 42%"></div>
+</div>
+        <span>360 Review</span>
+      </div>
+      
+      
+      <div class="product-card__price">74,99 €</div>
+      
+    </div>
+  </div>
+</div>
+
+      <div class="product-card">
+  
+  <a href="./product.html">
+    <div class="product-card__image-wrapper">
+      <div class="product-card__image">
+        <picture>
+          <source srcset="./assets/images/product/covers/image-3.avif" type="image/avif">
+          <source srcset="./assets/images/product/covers/image-3.webp" type="image/webp">
+          <img loading="lazy" src="./assets/images/product/covers/image-3.png" alt="Antifog, Magnetic lens">
+        </picture>
+      </div>
+    </div>
+  </a>
+  
+
+  
+  
+  
+
+  <div class="product-card__details">
+    
+    <a href="./product.html" class="product-card__name text-level-4 text-weight-700 link-border">The CHARGE Halfframe</a>
+    
+    
+    <a href="./category.html" class="product-card__category text-weight-500 link-border">Antifog, Magnetic lens</a>
+    
+    
+    <div class="product-card__features text-color-secondary">2 COMBINATION</div>
+    
+
+    <div class="product-card__footer">
+      
+      <div class="product-card__review rating">
+        <div class="stars margin-right-1">
+  <div class="stars__back"></div>
+  <div class="stars__front" style="width: 42%"></div>
+</div>
+        <span>360 Review</span>
+      </div>
+      
+      
+      <div class="product-card__price">74,99 €</div>
+      
+    </div>
+  </div>
+</div>
+
+      <div class="product-card">
+  
+  <a href="./product.html">
+    <div class="product-card__image-wrapper">
+      <div class="product-card__image">
+        <picture>
+          <source srcset="./assets/images/product/covers/image-4.avif" type="image/avif">
+          <source srcset="./assets/images/product/covers/image-4.webp" type="image/webp">
+          <img loading="lazy" src="./assets/images/product/covers/image-4.png" alt="Antifog, Magnetic lens">
+        </picture>
+      </div>
+    </div>
+  </a>
+  
+
+  
+  
+  <div class="product-card__badge text-upper">Out of stock</div>
+  
+  
+
+  <div class="product-card__details">
+    
+    <a href="./product.html" class="product-card__name text-level-4 text-weight-700 link-border">The CHARGE Fullframe</a>
+    
+    
+    <a href="./category.html" class="product-card__category text-weight-500 link-border">Antifog, Magnetic lens</a>
+    
+    
+    <div class="product-card__features text-color-secondary">2 COMBINATION</div>
+    
+
+    <div class="product-card__footer">
+      
+      <div class="product-card__review rating">
+        <div class="stars margin-right-1">
+  <div class="stars__back"></div>
+  <div class="stars__front" style="width: 42%"></div>
+</div>
+        <span>18 Review</span>
+      </div>
+      
+      
+      <div class="product-card__price">24,99 €</div>
+      
+    </div>
+  </div>
+</div>
+
+      <div class="product-card">
+  
+  <a href="./product.html">
+    <div class="product-card__image-wrapper">
+      <div class="product-card__image">
+        <picture>
+          <source srcset="./assets/images/product/covers/image-5.avif" type="image/avif">
+          <source srcset="./assets/images/product/covers/image-5.webp" type="image/webp">
+          <img loading="lazy" src="./assets/images/product/covers/image-5.png" alt="Antifog, Magnetic lens">
+        </picture>
+      </div>
+    </div>
+  </a>
+  
+
+  
+  
+  
+
+  <div class="product-card__details">
+    
+    <a href="./product.html" class="product-card__name text-level-4 text-weight-700 link-border">The RUSH Halfframe Photochromic</a>
+    
+    
+    <a href="./category.html" class="product-card__category text-weight-500 link-border">Antifog, Magnetic lens</a>
+    
+    
+    <div class="product-card__features text-color-secondary">2 COMBINATION</div>
+    
+
+    <div class="product-card__footer">
+      
+      <div class="product-card__review rating">
+        <div class="stars margin-right-1">
+  <div class="stars__back"></div>
+  <div class="stars__front" style="width: 42%"></div>
+</div>
+        <span>360 Review</span>
+      </div>
+      
+      
+      <div class="product-card__price">49,99 €</div>
+      
+    </div>
+  </div>
+</div>
+
+      <div class="product-card">
+  
+  <a href="./product.html">
+    <div class="product-card__image-wrapper">
+      <div class="product-card__image">
+        <picture>
+          <source srcset="./assets/images/product/covers/image-6.avif" type="image/avif">
+          <source srcset="./assets/images/product/covers/image-6.webp" type="image/webp">
+          <img loading="lazy" src="./assets/images/product/covers/image-6.png" alt="Antifog, Magnetic lens">
+        </picture>
+      </div>
+    </div>
+  </a>
+  
+
+  
+  
+  
+
+  <div class="product-card__details">
+    
+    <a href="./product.html" class="product-card__name text-level-4 text-weight-700 link-border">The RUSH Halfframe</a>
+    
+    
+    <a href="./category.html" class="product-card__category text-weight-500 link-border">Antifog, Magnetic lens</a>
+    
+    
+    <div class="product-card__features text-color-secondary">3 COMBINATION</div>
+    
+
+    <div class="product-card__footer">
+      
+      <div class="product-card__review rating">
+        <div class="stars margin-right-1">
+  <div class="stars__back"></div>
+  <div class="stars__front" style="width: 42%"></div>
+</div>
+        <span>360 Review</span>
+      </div>
+      
+      
+      <div class="product-card__price">29,99 €</div>
+      
+    </div>
+  </div>
+</div>
+
+      <div class="product-card">
+  
+  <a href="./product.html">
+    <div class="product-card__image-wrapper">
+      <div class="product-card__image">
+        <picture>
+          <source srcset="./assets/images/product/covers/image-7.avif" type="image/avif">
+          <source srcset="./assets/images/product/covers/image-7.webp" type="image/webp">
+          <img loading="lazy" src="./assets/images/product/covers/image-7.png" alt="Antifog, Magnetic lens ">
+        </picture>
+      </div>
+    </div>
+  </a>
+  
+
+  
+  
+  
+
+  <div class="product-card__details">
+    
+    <a href="./product.html" class="product-card__name text-level-4 text-weight-700 link-border">The RUSH Fullframe</a>
+    
+    
+    <a href="./category.html" class="product-card__category text-weight-500 link-border">Antifog, Magnetic lens </a>
+    
+    
+    <div class="product-card__features text-color-secondary">2 COMBINATION</div>
+    
+
+    <div class="product-card__footer">
+      
+      <div class="product-card__review rating">
+        <div class="stars margin-right-1">
+  <div class="stars__back"></div>
+  <div class="stars__front" style="width: 42%"></div>
+</div>
+        <span>360 Review</span>
+      </div>
+      
+      
+      <div class="product-card__price">24,99 €</div>
+      
+    </div>
+  </div>
+</div>
+    </div>
+
+    <h3 class="category-title">ACCESSORIES</h3>
+
+    <div class="tab category__tab margin-top-3 margin-bottom-5" data-tab>
+      <div class="tab__header" data-tab-header>
+        <button class="tab__button" data-tab-item data-active>Case & Protection (3)</button>
+        <button class="tab__button" data-tab-item>Lenses (6)</button>
+        <button class="tab__button" data-tab-item>Goggles accessories (6)</button>
+        <button class="tab__button" data-tab-item>Elastic bands (3)</button>
+      </div>
+      <div class="tab__content">
+        <div class="tab__body" data-tab-body data-active>
+          <div class="category__products">
+            <div class="product-card">
+  
+  <a href="./product.html">
+    <div class="product-card__image-wrapper">
+      <div class="product-card__image">
+        <picture>
+          <source srcset="./assets/images/product/accessories/image-1.avif" type="image/avif">
+          <source srcset="./assets/images/product/accessories/image-1.webp" type="image/webp">
+          <img loading="lazy" src="./assets/images/product/accessories/image-1.png" alt="Antifog, Magnetic lens ">
+        </picture>
+      </div>
+    </div>
+  </a>
+  
+
+  
+  
+  
+
+  <div class="product-card__details">
+    
+    <a href="./product.html" class="product-card__name text-level-4 text-weight-700 link-border">Goggle hard Case</a>
+    
+    
+    <a href="./category.html" class="product-card__category text-weight-500 link-border">Antifog, Magnetic lens </a>
+    
+    
+
+    <div class="product-card__footer">
+      
+      <div class="product-card__review rating">
+        <div class="stars margin-right-1">
+  <div class="stars__back"></div>
+  <div class="stars__front" style="width: 42%"></div>
+</div>
+        <span>2 Review</span>
+      </div>
+      
+      
+      <div class="product-card__price">13,99 €</div>
+      
+    </div>
+  </div>
+</div>
+
+            <div class="product-card">
+  
+  <a href="./product.html">
+    <div class="product-card__image-wrapper">
+      <div class="product-card__image">
+        <picture>
+          <source srcset="./assets/images/product/accessories/image-2.avif" type="image/avif">
+          <source srcset="./assets/images/product/accessories/image-2.webp" type="image/webp">
+          <img loading="lazy" src="./assets/images/product/accessories/image-2.png" alt="Antifog, Magnetic lens">
+        </picture>
+      </div>
+    </div>
+  </a>
+  
+
+  
+  
+  
+
+  <div class="product-card__details">
+    
+    <a href="./product.html" class="product-card__name text-level-4 text-weight-700 link-border">Lenses case</a>
+    
+    
+    <a href="./category.html" class="product-card__category text-weight-500 link-border">Antifog, Magnetic lens</a>
+    
+    
+
+    <div class="product-card__footer">
+      
+      <div class="product-card__review rating">
+        <div class="stars margin-right-1">
+  <div class="stars__back"></div>
+  <div class="stars__front" style="width: 42%"></div>
+</div>
+        <span>96 Review</span>
+      </div>
+      
+      
+      <div class="product-card__price">12,99 €</div>
+      
+    </div>
+  </div>
+</div>
+
+            <div class="product-card">
+  
+  <a href="./product.html">
+    <div class="product-card__image-wrapper">
+      <div class="product-card__image">
+        <picture>
+          <source srcset="./assets/images/product/accessories/image-3.avif" type="image/avif">
+          <source srcset="./assets/images/product/accessories/image-3.webp" type="image/webp">
+          <img loading="lazy" src="./assets/images/product/accessories/image-3.png" alt="@@category">
+        </picture>
+      </div>
+    </div>
+  </a>
+  
+
+  
+  
+  
+
+  <div class="product-card__details">
+    
+    <a href="./product.html" class="product-card__name text-level-4 text-weight-700 link-border">Goggle protection</a>
+    
+    
+    
+    <div class="product-card__features text-color-secondary">6 COLORS</div>
+    
+
+    <div class="product-card__footer">
+      
+      <div class="product-card__review rating">
+        <div class="stars margin-right-1">
+  <div class="stars__back"></div>
+  <div class="stars__front" style="width: 42%"></div>
+</div>
+        <span>22 Review</span>
+      </div>
+      
+      
+      <div class="product-card__price">9,99 €</div>
+      
+    </div>
+  </div>
+</div>
+          </div>
+
+        </div>
+        <div class="tab__body" data-tab-body>
+          <p>2Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, culpa!</p>
+        </div>
+        <div class="tab__body" data-tab-body>
+          <p>3Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, culpa!</p>
+        </div>
+        <div class="tab__body" data-tab-body>
+          <p>4Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, culpa!</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+      <div class="section section-article article margin-y-9">
+  <div class="container">
+    <div class="article-body editor">
+      <h2 class="text-level-5">Suitable sports glasses for long training sessions</h2>
+      <p>Whether you are running, triathlon, hiking or cycling - a comfortable fit is a must, even during long and
+        intensive training sessions. That's why you should make sure that your sports glasses have an adjustable
+        nose piece and rubberised temples. This ensures that the glasses stay exactly where they are supposed to be,
+        even during a sweaty hike, and prevents annoying slipping. Our multifunctional sports glasses The HAWK and
+        The FALCON also have a magnetic sweatband. This keeps your eyes dry even during strenuous training sessions.
+        In addition, a retainer can be attached to the ends of the temples on The HAWK and The FALCON can be
+        attached. This ensures a perfect hold twice over.</p>
+
+      <h2 class="text-level-5 margin-top-5">Sporty all-rounder: Glasses for versatile use</h2>
+      <p>High-quality sports glasses are also characterised by many functions and a wide range of uses. Once you
+        have found the right model, you can use sports glasses for many outdoor activities. You don't have to buy
+        separate road cycling glasses, running glasses, triathlon glasses or cross-country skiing glasses.</p>
+
+      <h2 class="text-level-5 margin-top-5">The right lens for sports glasses: What should you look out for?</h2>
+      <p>The most important function of sports sunglasses is of course the protection of the eyes. 100% UV400
+        protection is indispensable. You can read more about UV rays here. In addition to UV protection, the tint of
+        the sports glasses is also an important criterion when choosing. Lenses have different anti-glare
+        categories. Basically, we can choose between lenses with category 0 to category 4 (CAT. 0 to CAT. 4).
+        Depending on the category, different amounts of light come through the lens. Depending on the light
+        conditions or the weather conditions, you can find the right lens . Lenses with category 0 (CAT. 0) are
+        transparent and especially recommended for very dark and foggy conditions or when trail running through the
+        forest. Lenses with filter category 1 (CAT. 1) are also suitable for low light and poorer conditions.
+        Category 2 and 3 (CAT. 2 and CAT. 3), on the other hand, are good all-round lenses. sports glasses with CAT.
+        2 and CAT. 3 lenses are perfect for normal to fair conditions. If you are mainly out and about in sunny
+        conditions, then sports glasses with light category 4 (CAT. 4) are the ones to go for. Want to know more
+        about filter categories and the VLT value? You can find out more here.</p>
+
+      <div class="article-body__double-grid article-body__double-grid_indented margin-top-5 margin-bottom-2">
+        <div class="article-body__box">
+          <h2 class="text-level-5">Sports glasses with interchangeable lenses: Prepared for all eventualities</h2>
+          <p>Anyone who likes to be out in nature knows how quickly the weather can change and how often the lighting
+            conditions can change. sports glasses with interchangeable lenses are the solution to this problem. Thanks
+            to the simple exchange system, the lenses of the multifunctional glasses The HAWK and The FALCON can be
+            exchanged within a few seconds. This means you are perfectly equipped for all weather conditions.</p>
+        </div>
+
+        <div class="article-body__box">
+          <h2 class="text-level-5">Polarised sports glasses: What are the advantages and disadvantages?</h2>
+          <p>For many outdoor athletes, it is important that their sports glasses are equipped with a polarising
+            filter. But what does polarisation actually mean? The filter minimises annoying reflections and enhances
+            contrasts. Since you are exposed to many reflections, especially in nature or on the water, many athletes
+            opt for polarised sports glasses. One disadvantage of polarised lenses, however, is that they are harder
+            to read from smartphones, sports watches, bicycle computer displays or car dashboards. You can read more
+            advantages and disadvantages of sports glasses with polarised lenses in the polarising filter guide.</p>
+        </div>
+      </div>
+
+      <h2 class="text-level-5 margin-top-5">Self-tinting (photochromatic) sports glasses for men and women</h2>
+      <p>Have you ever heard of photochromic cycling glasses? These are sports glasses, which have self-tinting
+        lenses. This is very practical, especially in changing light conditions, as you are equipped with sports
+        glasses for different weather conditions. The lenses change from category 1 (CAT. 1) to category 3 (CAT. 3)
+        and automatically get lighter and darker during sports. Photochromic sports glasses of course also offer
+        100% UV400 protection and block harmful UVA and UVB rays.</p>
+
+      <h2 class="text-level-5 margin-top-5">Ski goggles and cycling glasses from NAKED Optics from Austria</h2>
+      <p>NAKED Optics is a young, dedicated winter and biking enthusiast team that specialises in the development
+        and direct sales of high quality and trendy eyewear at reasonable prices. </p>
+    </div>
+  </div>
+</div>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__column footer__column_nav" data-footer-dropdown>
+        <div class="footer__column-title">Our Story <span class="icon icon-chevron"></span></div>
+        <nav class="footer__nav-list">
+          <a href="#" class="footer__nav-item">About us</a>
+          <a href="#" class="footer__nav-item">Contact</a>
+          <a href="#" class="footer__nav-item">Jobs</a>
+          <a href="#" class="footer__nav-item">Sponsoring</a>
+        </nav>
+      </div>
+
+      <div class="footer__column footer__column_nav" data-footer-dropdown>
+        <div class="footer__column-title">Support <span class="icon icon-chevron"></span></div>
+        <nav class="footer__nav-list">
+          <a href="#" class="footer__nav-item footer__nav-item_gradient">Get support</a>
+          <a href="#" class="footer__nav-item">FAQ</a>
+          <a href="#" class="footer__nav-item">Shipping Policy</a>
+          <a href="#" class="footer__nav-item">Refund Policy</a>
+          <a href="#" class="footer__nav-item">Return</a>
+          <a href="#" class="footer__nav-item">Trade-In</a>
+          <a href="#" class="footer__nav-item">Student discount</a>
+          <a href="#" class="footer__nav-item">Legal notice</a>
+        </nav>
+      </div>
+
+      <div class="footer__column footer__column_nav">
+        <div class="footer__column-title">Social</div>
+        <nav class="footer__social-list flex">
+          <a href="#" class="footer__social-item" aria-label="Go to YouTube channel">
+            <span class="icon icon-youtube"></span>
+          </a>
+          <a href="#" class="footer__social-item" aria-label="Go to facebook">
+            <span class="icon icon-facebook"></span>
+          </a>
+          <a href="#" class="footer__social-item" aria-label="Go to instagram">
+            <span class="icon icon-instagram"></span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="footer__column footer__column_payment">
+        <div class="footer__column-title">Our payment methods</div>
+        <div class="footer__payment-list">
+          <div class="footer__payment-item">
+            <picture>
+              <source srcset="./assets/images/footer/payments/visa.avif" type="image/avif">
+              <source srcset="./assets/images/footer/payments/visa.webp" type="image/webp">
+              <img src="./assets/images/footer/payments/visa.png" alt="Visa">
+            </picture>
+          </div>
+
+          <div class="footer__payment-item">
+            <picture>
+              <source srcset="./assets/images/footer/payments/mastercard.avif" type="image/avif">
+              <source srcset="./assets/images/footer/payments/mastercard.webp" type="image/webp">
+              <img src="./assets/images/footer/payments/mastercard.png" alt="Mastercard">
+            </picture>
+          </div>
+
+          <div class="footer__payment-item">
+            <picture>
+              <source srcset="./assets/images/footer/payments/maestro.avif" type="image/avif">
+              <source srcset="./assets/images/footer/payments/maestro.webp" type="image/webp">
+              <img src="./assets/images/footer/payments/maestro.png" alt="Maestro">
+            </picture>
+          </div>
+
+          <div class="footer__payment-item">
+            <picture>
+              <source srcset="./assets/images/footer/payments/dclub.avif" type="image/avif">
+              <source srcset="./assets/images/footer/payments/dclub.webp" type="image/webp">
+              <img src="./assets/images/footer/payments/dclub.png" alt="Delivery club">
+            </picture>
+          </div>
+
+          <div class="footer__payment-item">
+            <picture>
+              <source srcset="./assets/images/footer/payments/stripe.avif" type="image/avif">
+              <source srcset="./assets/images/footer/payments/stripe.webp" type="image/webp">
+              <img src="./assets/images/footer/payments/stripe.png" alt="Stripe">
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__column footer__column_secure">
+        <div class="footer__column-title">Secure shopping</div>
+        <div class="footer__secure">
+          <picture>
+            <source srcset="./assets/images/footer/secure.avif" type="image/avif">
+            <source srcset="./assets/images/footer/secure.webp" type="image/webp">
+            <img src="./assets/images/footer/secure.png" alt="Secure shopping">
+          </picture>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__meta">
+      <div class="footer__logo">
+        <img class="img img_vertical" src="./assets/images/logo-invert.svg" alt="">
+      </div>
+
+      <nav class="footer__menu">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Settings</a>
+        <a href="#">Terms of service</a>
+      </nav>
+
+      <span class="footer__copyright">© 2022 NAKED Optics - All Rights Reserved. | *All prices incl. VAT plus
+        shipping costs</span>
+
+      <div class="footer__lang">
+        <select name="" data-select>
+          <option value="ru" data-icon="lang-ru">RUS</option>
+          <option value="en" data-icon="lang-en">ENG</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-content" data-cart-modal>
+  <header class="modal-content__header">
+    <div class="modal-content__title">Cart</div>
+    <div class="modal-content__close" data-modal-close>
+      <span class="icon icon_small icon-close"></span>
+    </div>
+  </header>
+  <article class="modal-content__body">
+    <div class="cart-message">
+      <span class="cart-message__text">Free shipping from 150€</span>
+    </div>
+    <div class="free-shipping free-shipping_sticky">
+      <div class="free-shipping__text">
+        ONLY <span>60,02 €</span> MISSING FROM FREE SHIPPING!
+      </div>
+      <div class="free-shipping__progress margin-top-1">
+        <div class="free-shipping__progress-current" style="width: 40%;"></div>
+      </div>
+    </div>
+    <div class="cart-products grow-1">
+      <div class="cart-product">
+        <div class="cart-product__image">
+          <picture>
+            <source srcset="./assets/images/cards/card-1-glass.avif" type="image/avif">
+            <source srcset="./assets/images/cards/card-1-glass.webp" type="image/webp">
+            <img src="./assets/images/cards/card-1-glass.png" alt="">
+          </picture>
+        </div>
+        <div class="cart-product__details">
+          <div class="flex flex-column margin-bottom-1">
+            <span class="cart-product__title">The FALCON</span>
+            <span class="cart-product__text">Black (pol. - Cat. 4)</span>
+          </div>
+
+          <div class="number-field" data-number-field>
+            <button class="number-field__button number-field__decrement" data-number-field-decrement
+              title="Минимум 0"></button>
+            <input type="number" min="0" max="99" step="1" value="0" readonly>
+            <button class="number-field__button number-field__increment" data-number-field-increment
+              title="Максимум 99"></button>
+          </div>
+        </div>
+        <div class="cart-product__actions">
+          <div class="cart-product__trash">
+            <span class="icon icon-trash"></span>
+          </div>
+          <div class="cart-product__price price price_discount">
+            <span class="price__old">99,99 €</span>
+            <span class="price__new">79,99 €</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-product">
+        <div class="cart-product__image">
+          <picture>
+            <source srcset="./assets/images/cards/card-1-glass.avif" type="image/avif">
+            <source srcset="./assets/images/cards/card-1-glass.webp" type="image/webp">
+            <img src="./assets/images/cards/card-1-glass.png" alt="">
+          </picture>
+        </div>
+        <div class="cart-product__details">
+          <div class="flex flex-column margin-bottom-1">
+            <span class="cart-product__title">FALCON Goggle-Upgrade</span>
+            <span class="cart-product__text">Black</span>
+          </div>
+
+          <div class="number-field" data-number-field>
+            <button class="number-field__button number-field__decrement" data-number-field-decrement
+              title="Минимум 0"></button>
+            <input type="number" min="0" max="99" step="1" value="0" readonly>
+            <button class="number-field__button number-field__increment" data-number-field-increment
+              title="Максимум 99"></button>
+          </div>
+        </div>
+        <div class="cart-product__actions">
+          <div class="cart-product__trash">
+            <span class="icon icon-trash"></span>
+          </div>
+          <div class="cart-product__price price">
+            <span class="price__new">9,99 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-extra">
+      <span class="cart-extra__title">Frequently purchased together</span>
+      <div class="cart-extra__products">
+        <div class="cart-product cart-product_extra">
+          <div class="cart-product__image">
+            <picture>
+              <source srcset="./assets/images/cards/card-1-glass.avif" type="image/avif">
+              <source srcset="./assets/images/cards/card-1-glass.webp" type="image/webp">
+              <img src="./assets/images/cards/card-1-glass.png" alt="">
+            </picture>
+          </div>
+          <div class="cart-product__details">
+            <div class="flex flex-column margin-bottom-1">
+              <span class="cart-product__title">The FALCON</span>
+            </div>
+
+            <div class="cart-product__price price">
+              <span class="price__new">9,99 €</span>
+            </div>
+          </div>
+          <div class="cart-product__actions">
+            <button class="button button_small button_auto button_full button_variant_2">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </article>
+  <footer class="modal-content__footer">
+    <div class="flex justify-between items-center">
+      <span class="text-big text-color-primary">Total</span>
+      <span class="text-big text-color-primary">89,98 €</span>
+    </div>
+    <p class="text-center text-color-primary margin-top-1">You’ll be able to add your discount code during the checkout
+    </p>
+    <button class="button button_small button_full button_variant_2 margin-top-1">
+      Go to checkout
+      <span class="button__icon button__icon_right">
+        <span class="icon icon-cart"></span>
+      </span>
+    </button>
+  </footer>
+</div>
+
+    <div class="modal-content filter" data-filter-modal>
+  <header class="modal-content__header">
+    <div class="modal-content__title">Filter</div>
+    <div class="modal-content__close" data-modal-close>
+      <span class="icon icon_small icon-close"></span>
+    </div>
+  </header>
+  <article class="modal-content__body filter__body">
+    <div class="filter__group filter-group">
+      <div class="filter-group__title">Size</div>
+      <div class="filter-group__content">
+        <div class="filter-group__row">
+          <label class="checkbox">
+            <input name="checkbox" type="checkbox">
+            <span class="checkbox__text">Size S</span>
+            <span class="checkbox__icon"></span>
+          </label>
+          <div class="filter-group__hint">
+            <span class="icon icon-hint"></span>
+          </div>
+        </div>
+
+        <div class="filter-group__row">
+          <label class="checkbox">
+            <input name="checkbox" type="checkbox">
+            <span class="checkbox__text">Size M</span>
+            <span class="checkbox__icon"></span>
+          </label>
+          <div class="filter-group__hint">
+            <span class="icon icon-hint"></span>
+          </div>
+        </div>
+
+        <div class="filter-group__row">
+          <label class="checkbox">
+            <input name="checkbox" type="checkbox">
+            <span class="checkbox__text">Size L</span>
+            <span class="checkbox__icon"></span>
+          </label>
+          <div class="filter-group__hint">
+            <span class="icon icon-hint"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter__group filter-group">
+      <div class="filter-group__title">Glass replacement sistem</div>
+      <div class="filter-group__content">
+        <div class="filter-group__row">
+          <label class="checkbox">
+            <input name="checkbox" type="checkbox">
+            <span class="checkbox__text">SnapTech magnet system</span>
+            <span class="checkbox__icon"></span>
+          </label>
+          <div class="filter-group__count">[2]</div>
+          <div class="filter-group__hint">
+            <span class="icon icon-hint"></span>
+          </div>
+        </div>
+
+        <div class="filter-group__row">
+          <label class="checkbox">
+            <input name="checkbox" type="checkbox">
+            <span class="checkbox__text">Pin Plugin System</span>
+            <span class="checkbox__icon"></span>
+          </label>
+          <div class="filter-group__count">[1]</div>
+          <div class="filter-group__hint">
+            <span class="icon icon-hint"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter__group filter-group">
+      <div class="filter-group__title">Features</div>
+      <div class="filter-group__content">
+        <div class="filter-group__row">
+          <label class="radio">
+            <input name="radio" type="radio">
+            <span class="radio__text">Anti-Fog</span>
+            <span class="radio__icon"></span>
+          </label>
+          <div class="filter-group__count">[2]</div>
+          <div class="filter-group__hint" data-tooltip="Anti-Fog Hint">
+            <span class="icon icon-hint"></span>
+          </div>
+        </div>
+
+        <div class="filter-group__row">
+          <label class="radio">
+            <input name="radio" type="radio">
+            <span class="radio__text">Super Anti-Fog</span>
+            <span class="radio__icon"></span>
+          </label>
+          <div class="filter-group__count">[1]</div>
+          <div class="filter-group__hint">
+            <span class="icon icon-hint"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer class="modal-content__footer">
+    <button class="button button_small button_full button_variant_2">
+      Apply filters
+      <span class="button__icon button__icon_right">
+        <span class="icon icon-filter"></span>
+      </span>
+    </button>
+
+    <button class="button button_small button_full">
+      Reset all
+    </button>
+  </footer>
+</div>
+  </div>
+</body>
+
+</html>
