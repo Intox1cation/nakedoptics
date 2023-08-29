@@ -38,7 +38,6 @@
   --box-radius: 6px;
   --box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   --font-family: "DM Sans", sans-serif;
-  --font-family-secondary: "Inter", sans-serif;
 }
 
 * {
@@ -7211,38 +7210,19 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
     max-width: none;
     height: 80%;
     border-radius: 32px 32px 0 0;
-    transform: translateY(100%);
-    opacity: 0.8;
-    transition: transform 325ms cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 325ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transform: translate3d(0px, 100%, 0px);
+    opacity: 1;
+    transition: transform 450ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    will-change: transform;
   }
 
   .modal[data-status=show] .modal-box {
-    transform: translateY(0px);
-    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
   }
 
   .modal[data-status=hide] .modal-box {
-    transform: translateY(100%);
-    opacity: 0.8;
-  }
-
-  .modal_side .modal-box {
-    max-width: none;
-    height: 80%;
-    border-radius: 32px 32px 0 0;
-    transform: translateY(100%);
-    opacity: 0.8;
-    transition: transform 325ms cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 325ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  }
-
-  .modal_side[data-status=show] .modal-box {
-    transform: translateY(0px);
+    transform: translate3d(0px, 100%, 0px);
     opacity: 1;
-  }
-
-  .modal_side[data-status=hide] .modal-box {
-    transform: translateY(100%);
-    opacity: 0.8;
   }
 
   .modal-content__header {
